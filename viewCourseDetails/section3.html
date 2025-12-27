@@ -1,0 +1,399 @@
+<!-- section1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Section 1 Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fa;
+      margin: 0;
+    }
+    .container-box {
+      padding: clamp(30px, 5vw, 60px);
+    }
+    .info-box {
+      /* background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; */
+
+       border: 3px solid transparent;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       text-decoration: none;
+       color: #333;
+       position: relative;
+       overflow: hidden;
+       background: #ffffff;
+      border-radius: 16px;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      /* animation: fadeInUp 0.8s ease forwards; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    .info-box:hover {
+      /* transform: scale(1.02);
+      animation: hoverPop 0.5s forwards; */
+      animation: borderRun 1.5s infinite linear;
+      border: 3px solid red;
+      box-shadow: 0 0 15px red;
+    }
+        /* Border animation */
+@keyframes borderRun {
+  0% {
+    box-shadow: 0 0 0px red;
+  }
+  50% {
+    box-shadow: 0 0 15px red;
+  }
+  100% {
+    box-shadow: 0 0 0px red;
+  }
+}
+/* Optional icon (lightbulb) */
+.info-box::before {
+  content: "💡";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover::before {
+  transform: rotate(20deg) scale(1.2);
+}
+    .info-box h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #2c3e50;
+    }
+    .info-box p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: #555;
+      line-height: 1.7;
+    }
+    .view-details {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: clamp(14px, 2vw, 18px);
+      background: linear-gradient(135deg, #4e9af1, #68d0f4);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .view-details:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes hoverPop {
+      from {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      to {
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+      .section-header {
+  display: inline-block;
+  padding: 12px 15px 15px 8px;
+  font-size: clamp(14px, 4vw, 20px); /* responsive text */
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 132, 255, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: center;
+  top: -10px;
+  left:-15px;
+  overflow: hidden;
+  animation: slideUpFade 1s ease-in-out;
+}
+
+/* Hover animation */
+.section-header:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 132, 255, 0.5);
+}
+  </style>
+</head>
+<body>
+  <div class="container container-box">
+    <div class="info-box">
+      <h1 class="section-header">Session 1</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Introduction to Web Development</h6>
+      <p>Welcome to the first section.You will understand how websites and web applications work, the role of the browser, server, and databases, and the responsibilities of a full stack developer. You'll explore how modern web applications are structured and what tools are used in the development lifecycle.</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• What is web development and how it has evolved <br>
+• Difference between static and dynamic websites <br>
+• Understanding front-end, back-end, and full stack roles <br>
+• How websites work – domain, DNS, client-server model <br>
+• Introduction to development tools: code editors, terminal, browsers 
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Install Visual Studio Code and Chrome <br>
+• Create a sample project folder structure <br>
+• Write your first “Hello World” HTML page <br> 
+• Explore browser Developer Tools
+
+</p>
+
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 2</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">HTML – Structuring the Web</h6>
+      <p>Learn how to create the basic structure of any web page using HTML. You’ll understand the importance of semantic tags and how browsers interpret HTML elements to display content.</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Basic HTML syntax and structure <br>
+• Headings, paragraphs, images, links, and lists <br>
+• Forms and input types <br>
+• Tables and iframes <br>
+• Semantic elements: header, nav, section, article, footer
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Create a basic personal profile webpage <br>
+• Add forms for contact or sign-up <br>
+• Use semantic tags to build a structured webpage
+
+      </p>
+     
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 3</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">HTML – Structuring the Web</h6>
+      <p>Learn how to create the basic structure >CSS – Styling and Layouts</h6>
+      <p>In this session, you'll learn to style your HTML pages using CSS. You will explore how layout and design principles are applied to make websites visually appealing and user-friendly across all screen sizes.</p>
+      
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• CSS syntax and types (inline, internal, external) <br>
+• Box model – margin, padding, border <br>
+• Styling text, colors, backgrounds <br>
+• Layout techniques – Flexbox and Grid <br>
+• Media queries for responsive design
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Style the profile webpage from Session 2 <br>
+• Use Flexbox to create responsive sections <br>
+• Add hover effects, transitions, and media queries
+
+      </p>
+
+    </div>
+     <div class="info-box">
+      <h1 class="section-header">Session 4</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">JavaScript – Adding Interactivity</h6>
+       <p>Start writing client-side JavaScript to add behavior to your website. You’ll understand how JavaScript interacts with HTML elements and respond to user actions.</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• JavaScript basics – variables, data types, operators <br>
+• Functions, conditional statements, loops <br>
+• Document Object Model (DOM) manipulation <br>
+• Event listeners and user input handling <br>
+• Basic form validation
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Create a dynamic form with validation <br>
+• Make interactive elements like tabs or dropdowns <br>
+• Toggle visibility of elements using button clicks 
+
+      </p>
+      
+    </div>
+
+     <div class="info-box">
+      <h1 class="section-header">Session 5</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Advanced JavaScript & ES6+</h6>
+      <p>Level up your JavaScript knowledge with modern syntax and powerful built-in methods. Understand how to work efficiently with arrays, objects, and asynchronous code.</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• ES6 features – let/const, arrow functions, destructuring <br>
+• Arrays and objects – deep dive <br>
+• Useful array methods: map, filter, reduce <br>
+• Introduction to asynchronous programming <br>
+• Promises and async/await
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Build a to-do list app using array methods <br>
+• Simulate fetching data asynchronously <br>
+• Practice ES6 syntax by refactoring old code
+
+      </p>
+      
+    </div>
+
+
+     <div class="info-box">
+      <h1 class="section-header">Session 6</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Git and GitHub – Version Control Essentials</h6>
+      <p>Learn how professional developers manage and collaborate on code using Git. You’ll understand how version control improves productivity, safety, and teamwork.</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• What is Git and why it’s used <br>
+• Basic Git commands: init, add, commit, status, log <br>
+• Connecting to GitHub – clone, push, pull <br>
+• Branching, merging, and handling merge conflicts <br>
+• Collaborating on open-source or team projects
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Initialize a Git repo and commit your project <br>
+• Create a GitHub repository and push your code <br>
+• Create a feature branch and merge it back to main
+
+      </p>
+      
+    </div>
+
+
+
+     <div class="info-box">
+      <h1 class="section-header">Session 7</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Responsive Web Design with Bootstrap</h6>
+      <p>This session teaches you to build responsive websites quickly using the Bootstrap framework. You’ll learn how to use prebuilt components and layout utilities for professional-grade UIs.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p> 
+• Introduction to Bootstrap and its grid system <br>
+• Responsive layout design using containers and rows <br>
+• Using built-in components – navbar, cards, carousel, modals <br>
+• Utility classes for spacing, colors, typography <br>
+• Customizing Bootstrap via CSS overrides
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Build a responsive portfolio or landing page <br>
+• Use cards to display projects <br>
+• Create a modal-based contact form
+
+      </p>
+      
+    </div>
+     <div class="info-box">
+      <h1 class="section-header">Session 8</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">React Fundamentals – Building Modern UIs</h6>
+      <p>Explore React, the most popular JavaScript library for building user interfaces. You’ll learn how to break down your UI into reusable components and manage state.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Why React? Understanding component-based architecture <br>
+• JSX syntax and rendering dynamic content <br>
+• Functional components and props <br>
+• Managing state with useState <br>
+• Handling forms and user input
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Set up a React app using Create React App <br>
+• Build a simple counter and to-do list <br>
+• Pass data using props between components
+
+      </p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 9</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Node.js and Express.js – Server-Side Programming</h6>
+      <p>
+In this session, you will begin working on the back end using Node.js and Express.js. Learn how to build APIs, handle routes, and serve data to your front end.
+      </p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Introduction to Node.js and asynchronous programming <br>
+• Setting up an Express server <br>
+• Creating RESTful APIs <br>
+• Routing and middleware in Express <br>
+• Sending and receiving JSON data
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Build a simple REST API for user data <br>
+• Connect your React front-end to the Express back-end <br>
+• Test endpoints using Postman or browser
+
+      </p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 10</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">MongoDB – Working with Databases</h6>
+      <p>This final core session teaches you to store and retrieve data using MongoDB, a popular NoSQL database. Learn to model, query, and manage data with ease.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Introduction to NoSQL and MongoDB basics <br>
+• Collections, documents, and schema design <br>
+• CRUD operations with MongoDB <br>
+• Using Mongoose to connect with Node.js <br>
+• Data validation and relationships
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Create a MongoDB Atlas cluster <br>
+• Build a user registration and login database <br>
+• Perform insert, update, delete, and read operations
+      </p>
+      
+    </div>
+
+    <!-- <div class="info-box">
+      <h1>Section 1 – Getting Started</h1>
+      <p>Make sure you have your tools ready: a browser, code editor, and motivation to learn!</p>
+      
+    </div> -->
+
+    
+  </div>
+</body>
+</html>
+
+<!-- Repeat the same pattern in section2.html to section5.html -->

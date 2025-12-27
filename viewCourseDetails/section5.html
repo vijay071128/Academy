@@ -1,0 +1,442 @@
+<!-- section1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Section 1 Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fa;
+      margin: 0;
+    }
+    .container-box {
+      padding: clamp(30px, 5vw, 60px);
+    }
+    .info-box {
+      /* background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; */
+       border: 3px solid transparent;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       text-decoration: none;
+       color: #333;
+       position: relative;
+       overflow: hidden;
+       background: #ffffff;
+      border-radius: 16px;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      /* animation: fadeInUp 0.8s ease forwards; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .info-box:hover {
+      /* transform: scale(1.02);
+      animation: hoverPop 0.5s forwards; */
+      animation: borderRun 1.5s infinite linear;
+      border: 3px solid red;
+      box-shadow: 0 0 15px red;
+    }
+                /* Border animation */
+@keyframes borderRun {
+  0% {
+    box-shadow: 0 0 0px red;
+  }
+  50% {
+    box-shadow: 0 0 15px red;
+  }
+  100% {
+    box-shadow: 0 0 0px red;
+  }
+}
+/* Optional icon (lightbulb) */
+.info-box::before {
+  content: "💡";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover::before {
+  transform: rotate(20deg) scale(1.2);
+}
+    .info-box h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #2c3e50;
+    }
+    .info-box p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: #555;
+      line-height: 1.7;
+    }
+    .view-details {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: clamp(14px, 2vw, 18px);
+      background: linear-gradient(135deg, #4e9af1, #68d0f4);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .view-details:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes hoverPop {
+      from {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      to {
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+          .section-header {
+  display: inline-block;
+  padding: 12px 15px 15px 8px;
+  font-size: clamp(14px, 4vw, 20px); /* responsive text */
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 132, 255, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: center;
+  top: -10px;
+  left:-15px;
+  overflow: hidden;
+  animation: slideUpFade 1s ease-in-out;
+}
+
+/* Hover animation */
+.section-header:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 132, 255, 0.5);
+}
+  </style>
+</head>
+<body>
+  <div class="container container-box">
+    <div class="info-box">
+      <h1 class="section-header">Session 1</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Introduction to Manual Testing</h6>
+      <p>Understand the fundamentals of software testing, its importance in the SDLC, and common testing methodologies.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• What is Software Testing? <br>
+• Why testing is important <br>
+• Types of Testing: Smoke, Sanity, Regression, System <br>
+• Black Box vs White Box Testing <br>
+• Validation vs Verification <br>
+• Defect/Bug Life Cycle <br>
+• Entry and Exit criteria in testing <br>
+• SDLC and testing models
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Document real-life test scenarios <br>
+• Practice writing test cases and test scenarios <br>
+• Map test cases to requirements
+
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 2</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Manual Testing Templates & Execution</h6>
+      <p>Learn how to write effective test cases and test suites. Understand testing documentation.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Writing Test Descriptions <br>
+• Test Templates and formats <br>
+• Creating Test Suites <br>
+• Test Case Management
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Design sample test cases using templates <br>
+• Execute a basic test suite manually <br>
+• Record and report bugs
+
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 3</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Java Programming for Testers – Part 1</h6>
+      <p> Learn core Java programming to prepare for Selenium Automation with Java.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Java Basics: Syntax, Datatypes, Variables <br>
+• Control Structures: If, Switch, Loops <br>
+• Functions and Return types <br>
+• Arrays, Strings, and Object-Oriented Basics <br>
+• JVM, JDK, JRE concepts
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Write simple Java programs <br>
+• Practice loops and conditions <br>
+• Create and run a Java class
+
+</p>
+      
+    </div>
+
+
+    <div class="info-box">
+      <h1 class="section-header">Session 4</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Java Programming for Testers – Part 2</h6>
+      <p>Deepen your Java understanding with object-oriented principles and error handling.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• OOP Concepts: Inheritance, Polymorphism, Abstraction, Encapsulation <br>
+• Constructors and Method Overloading <br>
+• Exception Handling (try, catch, finally) <br>
+• Java IO and File Handling
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Create a class hierarchy using OOP principles <br>
+• Handle runtime exceptions <br>
+• Read and write to files
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 5</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Selenium WebDriver with Java – Part 1</h6>
+      <p>Learn Selenium basics, installation, and automation setup.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• What is Selenium? <br>
+• Selenium Architecture <br>
+• WebDriver vs RC <br>
+• Setting up Selenium with Eclipse and Java <br>
+• Locators and WebElement interactions <br>
+• Handling Inputs, Buttons, Checkboxes
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Launch browser and perform login test <br>
+• Use locators to interact with elements <br>
+• Automate a basic login form
+
+</p>
+      
+    </div>
+
+
+    <div class="info-box">
+      <h1 class="section-header">Session 6</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Selenium WebDriver with Java – Part 2</h6>
+      <p>Build automation scripts and learn frameworks.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Page Navigation and Commands <br>
+• Handling Alerts, Drop-downs, Drag & Drop <br>
+• Assertions <br>
+• Data-Driven Framework <br>
+• Page Object Model (POM) <br>
+• Hybrid Framework
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Automate end-to-end scenario <br>
+• Implement Data-Driven Framework <br>
+• Create reusable page classes using POM
+
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 7</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">TestNG and Selenium Grid</h6>
+      <p>Explore test execution strategies using TestNG and Selenium Grid.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• TestNG Installation & Configuration <br>
+• Writing and prioritizing test cases <br>
+• Parameterization <br>
+• Parallel Execution using Selenium Grid <br>
+• Cross-browser testing
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Setup TestNG in project <br>
+• Create parallel execution suite <br>
+• Run tests on multiple browsers
+
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 8</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Selenium with Python – Part 1</h6>
+      <p>Begin automation using Python for Selenium testing.</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Python Basics: Variables, Lists, Tuples, Sets, Functions <br>
+• Python OOP: Classes and Inheritance <br>
+• Installing Selenium with Python <br>
+• Setting up Pycharm and Pip <br>
+• Locators and Commands
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Automate login/logout using Selenium with Python  <br>
+• Locate elements using different strategies <br>
+• Write reusable Python functions
+
+      </p>
+      
+    </div>
+
+<div class="info-box">
+      <h1 class="section-header">Session 9</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Selenium with Python – Part 2</h6>
+      <p>Learn advanced automation scenarios using frameworks and waits.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Handling Alerts, Popups, and Windows <br>
+• Keyboard & Mouse Events <br>
+• Waits in Selenium <br>
+• Data-Driven Testing <br>
+• Page Object Model <br>
+• End-to-End Automation
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Automate complete flow (e.g., registration form) <br>
+• Create POM classes <br>
+• Handle synchronization using waits
+
+      </p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 10</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Mobile App Testing using Appium – Part 1</h6>
+      <p>Explore mobile automation using Appium on Android and iOS apps.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Appium Overview and Features <br>
+• Native vs Hybrid Apps <br>
+• Emulator/Simulator setup <br>
+• Appium Architecture and APIs <br>
+• Gestures: Tap, Swipe, Scroll
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Install and configure Appium <br>
+• Write test case for Android app login <br>
+• Automate scroll and swipe gestures
+
+      </p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 11</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Mobile App Testing using Appium – Part 2</h6>
+      <p>Advance your skills with frameworks, real devices, and test execution.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Real Device Testing (Android & iOS) <br>
+• Appium with Maven <br>
+• TestNG with Appium <br>
+• Page Object Model for mobile apps <br>
+• Framework design and reporting 
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Run tests on real mobile device <br>
+• Develop test suite using POM <br>
+• Build an end-to-end test framework
+
+      </p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 12</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Continuous Testing and DevOps Tools</h6>
+      <p>Learn integration of automation with DevOps tools for CI/CD pipelines.
+</p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Introduction to DevOps <br>
+• Jenkins: Setup, Jobs, Pipelines <br>
+• Docker: Images, Containers, Compose <br>
+• GIT: Version control for testers <br>
+• Ansible, Kubernetes, YAML, Manifest files <br>
+• Maven project setup
+
+      </p>
+      <h4 class="" style="color: blue">Hands-on:</h4>
+      <p>
+• Build a CI pipeline with Jenkins <br>
+• Push and pull test code with Git <br>
+• Run Selenium scripts inside Docker containers <br>
+• Access mobile devices with Appium in CI environment
+
+      </p>
+      
+    </div>
+
+  </div>
+</body>
+</html>
+
+<!-- Repeat the same pattern in section2.html to section5.html -->

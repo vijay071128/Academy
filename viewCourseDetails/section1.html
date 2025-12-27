@@ -1,0 +1,368 @@
+<!-- section1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Section 1 Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fa;
+      margin: 0;
+    }
+    .container-box {
+      padding: clamp(30px, 5vw, 60px);
+    }
+    .info-box {
+  border: 3px solid transparent;
+
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+
+       background: #ffffff;
+      border-radius: 16px;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      /* animation: fadeInUp 0.8s ease forwards; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    .info-box:hover {
+      /* transform: scale(1.02);
+      animation: hoverPop 0.5s forwards; */
+      animation: borderRun 1.5s infinite linear;
+  border: 3px solid red;
+  box-shadow: 0 0 15px red;
+
+    }
+
+/* Border animation */
+@keyframes borderRun {
+  0% {
+    box-shadow: 0 0 0px red;
+  }
+  50% {
+    box-shadow: 0 0 15px red;
+  }
+  100% {
+    box-shadow: 0 0 0px red;
+  }
+}
+/* Optional icon (lightbulb) */
+.info-box::before {
+  content: "💡";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover::before {
+  transform: rotate(20deg) scale(1.2);
+}
+
+
+    .info-box .section-header {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #2c3e50;
+    }
+    .info-box p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: #555;
+      line-height: 1.7;
+    }
+    .view-details {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: clamp(14px, 2vw, 18px);
+      background: linear-gradient(135deg, #4e9af1, #68d0f4);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .view-details:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes hoverPop {
+      from {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      to {
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+       .section-header {
+  display: inline-block;
+  padding: 12px 15px 15px 8px;
+  font-size: clamp(14px, 4vw, 20px); /* responsive text */
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 132, 255, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  top: -10px;
+  left:-15px;
+  overflow: hidden;
+  animation: slideUpFade 1s ease-in-out;
+}
+
+/* Hover animation */
+.section-header:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 132, 255, 0.5);
+}
+  </style>
+</head>
+<body>
+  <div class="container container-box">
+    <div class="info-box">
+      <h1 class="section-header">Session 1</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">INTRODUCTION TO AWS:</h4>
+      <p>Amazon web service is one of the leading cloud providers available in the market. AWS provides variety of services for your business and help you get through digital transformation for the future. You will be learning the AWS global infrastructure like, Regions, Availability Zones and Edge Locations. Overview of services provided by AWS such as,<br>
+    • Compute <br>
+    • Storage<br>
+    • Database<br>
+    • Networking <br>
+    • Security<br>
+    • Applications  </p>
+      <p>End of this session you will be having the good understanding of cloud concepts and its services and Impact of AWS in cloud environment. </p>
+      <h4 class="" style="color: blue">Hands on:</h4>
+      <p>• Open AWS free tier Account.<br>
+    • Setup payment methods and billing preference.<br>
+    • Set alarm for free tier usage </p>
+      
+    </div>
+    
+    <div class="info-box">
+      <h1 class="section-header">Session 2</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Virtual Private Cloud</h4>
+      <p>Logically isolated network devices (instances) from other AWS resources called VPC. You can provide your own private IPs for your instances. Your instances inside VPC will be interconnected together through VPC. Basic components of VPC to create a basic infrastructure is follows<br>
+    • VPC<br>
+    • Subnets<br>
+    • Route Tables<br>
+    • Internet gateway<br>
+      </p>
+      <p>End of this session you will have clarity of AWS regions, Availability Zones and Edge locations. Also you will learn CIDR concepts to get better understanding of IP ranges. </p>
+      <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Create and configure VPC, Subnets, Internet gateway and Route Tables. <br>
+    • Create NAT Gateway, NAT instances, VPC Peering, Endpoints. <br>
+    • Different between NACL and Security groups </p>
+    </div>
+
+
+    <div class="info-box">
+      <h1 class="section-header">Session 3</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">EC2</h4>
+      <p>EC2 provides a scalable computing capacity for your business. AWS have wide range of instance family (type) include Memory optimized, CPU optimized, Networking, etc. You can create instances using Amazon Machine Images, which is preconfigured by Amazon. AWS lets you create your own AMI and you can choose from any AMI available in Amazon Marketplace as well. Instances are available in many options,<br>
+    • On demand<br>
+    • Reserved <br>
+    • Spot Instance<br>
+    • Scheduled instance
+      </p>
+      <p>As a solution Architect you will be able to give a solution for your client to choose the perfect compute service for their business needs.</p>
+      <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Create and launch different type of operating Systems like Linux, Windows and connect them.<br>
+    • Create AMIs and Snapshots and launch instances using them.<br>
+    • Create additional Volume and attach with your instance.</p>
+    </div>
+
+
+    <div class="info-box">
+      <h1 class="section-header">Session 4</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Storage</h4>
+      <p>There are many storage options available in AWS as per your needs from short term to long term. In Amazon S3 you can store unlimited amount of data. S3, EBS, EFS, FSx, Glacier and DeepGlacier are some major storage options available in AWS. In this session you will be learning storage classes available in S3 and its features, cost, etc. You will get brief knowledge on storage classes, so that you can suggest your client more cost effective. Storage classes are,<br>
+    • Standard <br>
+    • Standard Infrequent Access <br>
+    • Standard Intelligent Tier <br>
+    • S3 Glacier <br>
+    • S3 Glacier Deep</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Create and attach EFS with instances <br>
+    • Create S3 and apply lifecycle policy and replicate bucket into another bucket. <br>
+    • Create static webhosting </p>
+      
+    </div>
+
+
+    <div class="info-box">
+      <h1 class="section-header">Session 5</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Load balancing and auto scaling</h4>
+      <p>Load balancing and Auto scaling are the significant features available in cloud environment. Load balancer is to split the traffic between servers and trigger the auto scaling when needed.  Load balancer keeps checking the server’s health in a proper time interval and takes the action according to it. There are three types of load balancers available, <br>
+    • Classic Load balancer <br>
+    • Application Load balancer <br>
+    • Network Load balancer</p>
+      <p>End of this session you will understand the load balancer concept. You will have an idea to use suited load balancer for your application.</p>
+      <h4 class="" style="color: blue">Hands on:</h4>
+      <p>   
+    • Create Load balancer and attach targeted instances into it. <br>
+    • Create auto scaling group and increase the instances when CPU utilization is high, and decrease the instances when CPU utilization is low.</p>
+    </div>
+
+
+    <div class="info-box">
+      <h1 class="section-header">Session 6</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Route 53</h4>
+      <p>Route 53 is a DNS service available in AWS. You can register your domain here. Create record set to host your website or application. Understand the routing policies available in AWS and apply which is suitable for your environment. Routing policies are <br>
+    • Simple <br>
+    • Weighted <br>
+    • Geological <br>
+    • Latency <br>
+    • Failover</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Register your Domain name <br>
+    • Create record set and apply routing policy <br>
+    • Configure Health check for your Load balancer or instance.</p>
+      
+    </div>
+    
+
+    <div class="info-box">
+      <h1 class="section-header">Session 7</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Cloud Front </h4>
+      <p>Cloud front is also called Content Delivery Network. Cloud front create a distribution (cache) for your website or Application at your nearest edge location. So the latency would be less for the next time user. You can block a particular country people to view your website. Analyze your website views from which OS, Browser and users.in this session you will be engaged into the following topics, <br>
+    • Origins and Origin groups <br>
+    • Behaviors <br>
+    • Restrictions <br>
+    • Invalidations</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+      <p>• Create distribution for your website. Block few country users viewing your website. Invalidate previous cache and create new one.  </p>
+      
+    </div>
+
+<div class="info-box">
+      <h1 class="section-header">Session 8</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">IAM</h4>
+      <p>IAM is to control your AWS resources most securely by limiting AWS users and other Services. You will be learning policies and role and its major impact on the resources. Configure password policies and activate MFA. In this session you will have knowledge on, <br>
+    • Users <br>
+    • Groups <br>
+    • Roles <br>
+    • Polices
+      </p>
+       <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Create user and add user to the group. Attach customized policy to that group. <br>
+    • Perform cross account access using STS</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 9</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Relational Database Service</h4>
+      <p>RDS is a SQL based fully managed Database service. Users don’t need to worry about storage scaling, patching, backups and maintenance. Replication cost you less and implementation is simple. RDS supports the following database engine, <br>
+    • Aurora <br>
+    • MySQL <br>
+    • MsSQL <br>
+    • MariaDB <br>
+    • PostGrel <br>
+    • Oracle</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+      <p>  
+    • Create database with replication on another Availability zone. Configure auto scaling, daily backup and auto upgrade. <br>
+    • Connect your database through database client and insert tables and contents into it. Apply some quires to retrieve data.</p>
+    
+    <h4 class="" style="color: rgb(24, 179, 231);">DynamoDB</h4>
+    <p>DynamoDB is a NoSQL database service available in AWS. It is a replacement for MangoDB. It can handle 20 million requests per second and also can handle over 10 trillion requests per day. In-memory caching, Backup and restore are the significant features of DynamoDB. They are mainly used for gaming application and IOT Applications. You will be learning the following topics, <br>
+    • Scaling through performance <br>
+    • Server less environment <br>
+    • Micro services</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+    <p>• Create and insert contents into DynamoDB table. Configure and manage multi-region replication.</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 10</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Monitoring (Cloud Trail & Cloud Watch)</h4>
+      <p>Cloud trail keeps the logs for the every activity happening into your AWS account. It does have the last 90 days activity by default. In this session you will be learning the different types of events available in cloud trail and its example. <br>
+    • Management event <br>
+    • Data event <br>
+    • Insight event</p>
+    <h4 class="" style="color: rgb(24, 179, 231);">Cloud Watch</h4>
+    <p>Cloud Watch is a monitoring to fetch the logs and perform some action accordingly. There are two types of monitoring option available. Basic and detailed monitoring. You will learn to create logs and metrics and event. It triggers some action when event occurs. Topics involved in cloud watch are, <br>
+    • Events <br>
+    • Logs <br>
+    • Metrics <br>
+    • Alarms</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Create cloud watch event to start new instance when CPU utilization is high. <br>
+    • Set alarm for the events and send notifivation</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 11</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Application Services</h4>
+      <p>There are many applications services available in AWS. SNS is the most commonly used application service. Simple Notification Services is to generate email notification and send it to the subscribers. Another application service we use is SQS. It is a replacement of Microsoft queuing service. Application services covered in this session are as follows, <br>
+    • Simple E-mail Service <br>
+    • Simple Queue Services <br>
+    • Simple Notification Service</p>
+    <h4 class="" style="color: blue">Hands on:</h4>
+      <p>    
+    • Create and send notification to the users <br>
+    • Create and send messages using standard and FIFO messaging queue.  </p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 12</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Design and Architecture </h4>
+      <p>As a solution Architect you will be able to give a solution for your client to create, implement and improve your cloud infrastructure by using the five pillars of well architect tools. <br>
+    • Operational excellence <br>
+    • Reliability <br>
+    • Security <br>
+    • Cost optimization <br>
+    • Performance efficiency</p>
+    <h4 class="" style="color: rgb(24, 179, 231);">Live projects</h4>
+    <p><span class="" style="font-size: 20px; color: red;">Title:</span> Create and implement Payment Gateway for the online gaming website.    </p>
+    <h4 class="" style="color: rgb(24, 179, 231);">Objectives: </h4>
+      <p>   
+    • To provide highly secure payment option uses some well Architect framework best practice guidance. <br>
+    • Utilize maximum capacity of the resources all the time. Enable auto scaling and load balancing. <br>
+    • Create IAM policies to limit user and resource access. <br>
+    • Set some best firewalls on both NACL and Security Group. <br>
+    • Deploy application and create failover routing policy for the website using Route 53. <br>
+    • Create distribution for the better performance.</p>
+      
+    </div>
+
+  </div>
+</body>
+</html>
+
+<!-- Repeat the same pattern in section2.html to section5.html -->

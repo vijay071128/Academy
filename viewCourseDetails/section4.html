@@ -1,0 +1,438 @@
+<!-- section1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Section 1 Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fa;
+      margin: 0;
+    }
+    .container-box {
+      padding: clamp(30px, 5vw, 60px);
+    }
+    .info-box {
+      /* background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; */
+       border: 3px solid transparent;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       text-decoration: none;
+       color: #333;
+       position: relative;
+       overflow: hidden;
+       background: #ffffff;
+      border-radius: 16px;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      /* animation: fadeInUp 0.8s ease forwards; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    .info-box:hover {
+      /* transform: scale(1.02);
+      animation: hoverPop 0.5s forwards; */
+      animation: borderRun 1.5s infinite linear;
+      border: 3px solid red;
+      box-shadow: 0 0 15px red;
+    }
+            /* Border animation */
+@keyframes borderRun {
+  0% {
+    box-shadow: 0 0 0px red;
+  }
+  50% {
+    box-shadow: 0 0 15px red;
+  }
+  100% {
+    box-shadow: 0 0 0px red;
+  }
+}
+/* Optional icon (lightbulb) */
+.info-box::before {
+  content: "💡";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover::before {
+  transform: rotate(20deg) scale(1.2);
+}
+    .info-box h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #2c3e50;
+    }
+    .info-box p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: #555;
+      line-height: 1.7;
+    }
+    .view-details {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: clamp(14px, 2vw, 18px);
+      background: linear-gradient(135deg, #4e9af1, #68d0f4);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .view-details:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes hoverPop {
+      from {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      to {
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+       .section-header {
+  display: inline-block;
+  padding: 12px 15px 15px 8px;
+  font-size: clamp(14px, 4vw, 20px); /* responsive text */
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 132, 255, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: center;
+  top: -10px;
+  left:-15px;
+  overflow: hidden;
+  animation: slideUpFade 1s ease-in-out;
+}
+
+/* Hover animation */
+.section-header:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 132, 255, 0.5);
+}
+  </style>
+</head>
+<body>
+  <div class="container container-box">
+    <div class="info-box">
+      <h1 class="section-header">Session 1</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Introduction to Data Science and the Industry Landscape</h6>
+      <p>
+Kickstart your journey by understanding what data science is, how it’s applied in the real world, and why it's a critical skill across industries today.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• What is Data Science? <br>
+• Real-world use cases and business applications <br>
+• Data Science project lifecycle <br>
+• Difference between Data Analysts, Data Engineers, and Data Scientists <br>
+• Introduction to tools used: Python, R, Jupyter, Git, SQL
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Install Jupyter Notebook and Anaconda <br>
+• Run your first Python and R notebook <br>
+• Explore a sample dataset
+
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 2</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Python Programming for Data Science – Fundamentals</h6>
+      <p>
+Python is a must-have skill in Data Science. In this session, you'll learn core programming concepts and how to work with data effectively.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Python syntax and variables <br>
+• Data types: lists, tuples, dictionaries, sets <br>
+• Functions, loops, and conditions <br>
+• File handling and working with JSON <br>
+• Python libraries: NumPy, pandas
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Write basic scripts for data manipulation <br>
+• Practice loops, conditions, and functions <br>
+• Read and write files (CSV/JSON)
+
+</p>
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">Session 3</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Data Analysis with Pandas and NumPy</h6>
+      <p>Start working with real-world datasets using pandas and NumPy, two powerful libraries for structured and numerical data.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• NumPy arrays and operations <br>
+• pandas Series and DataFrames <br>
+• Data selection, filtering, slicing <br>
+• Grouping, aggregation, merging datasets <br>
+• Handling missing values and data cleaning
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Load and explore large datasets <br>
+• Perform filtering, sorting, and reshaping <br>
+• Handle null values and outliers
+
+</p>
+      
+    </div>
+     <div class="info-box">
+      <h1 class="section-header">Session 4</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Data Visualization Techniques</h6>
+      <p>Data visualization is key to uncovering patterns. Learn how to visually represent insights using Python libraries.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Importance of visual storytelling <br>
+• matplotlib, seaborn basics <br>
+• Line, bar, scatter, histogram, pie charts <br>
+• Heatmaps and correlation plots <br>
+• Styling plots and customizing charts
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Create comparison and trend charts <br>
+• Plot relationships and distributions <br>
+• Visualize real data (sales, customer, healthcare)
+
+</p>
+      
+    </div>
+     <div class="info-box">
+      <h1 class="section-header">Session 5</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Statistics for Data Science</h6>
+      <p>Develop a strong statistical foundation for making data-driven decisions and validating insights.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Descriptive vs inferential statistics <br>
+• Probability distributions <br>
+• Central tendency and variability <br>
+• Hypothesis testing <br>
+• Confidence intervals and p-values
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Calculate summary statistics <br>
+• Conduct hypothesis tests <br>
+• Use real datasets to identify trends and make predictions
+</p>
+      
+    </div>
+     <div class="info-box">
+      <h1 class="section-header">Session 6</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Exploratory Data Analysis (EDA)</h6>
+      <p>Learn how to analyze, summarize, and present datasets effectively before modeling.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Importance of EDA <br>
+• Detecting outliers and anomalies <br>
+• Feature engineering basics <br>
+• Skewness, kurtosis, normality <br>
+• Correlation and causation
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Perform full EDA on a real-world dataset <br>
+• Visualize data quality and distribution <br>
+• Identify key features for modeling
+
+</p>
+      
+    </div>
+     <div class="info-box">
+      <h1 class="section-header">Session 7</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Machine Learning – Supervised Learning</h6>
+      <p>Dive into machine learning by understanding how algorithms learn from labeled data.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Introduction to machine learning <br>
+• Train/test split and model evaluation <br>
+• Linear and logistic regression <br>
+• Decision trees and random forests <br>
+• Evaluation metrics: accuracy, precision, recall, F1
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Build a predictive model using logistic regression <br>
+• Train a classifier for customer churn <br>
+• Evaluate model performance using metrics
+
+</p>
+      
+    </div>
+
+     <div class="info-box">
+      <h1 class="section-header">Session 8</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Machine Learning – Unsupervised Learning</h6>
+      <p>Discover how to find hidden patterns in data without labeled outcomes.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• K-means clustering <br>
+• Hierarchical clustering <br>
+• Principal Component Analysis (PCA) <br>
+• Dimensionality reduction <br>
+• Use cases in segmentation and anomaly detection
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Segment customers using K-means <br>
+• Perform PCA on a high-dimensional dataset <br>
+• Visualize clusters and interpret results
+
+</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 9</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Introduction to R Programming</h6>
+      <p>Explore data science using R – a powerful tool for statistics and data visualization.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• R environment and syntax basics <br>
+• Data structures: vectors, matrices, lists, data frames <br>
+• Data manipulation using dplyr <br>
+• Visualization with ggplot2 <br>
+• Statistical analysis using R
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Load datasets and manipulate them using R <br>
+• Create visualizations using ggplot2 <br>
+• Perform t-tests and linear regression in R
+
+</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 10</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">SQL for Data Science</h6>
+      <p>Learn how to extract, filter, and analyze structured data using SQL — a must-have for working with relational databases.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• SQL basics – SELECT, WHERE, GROUP BY <br>
+• Joins, subqueries, and set operations <br>
+• Filtering and sorting <br>
+• Aggregation and window functions <br>
+• Integrating SQL with Python
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Write SQL queries on sample retail dataset <br>
+• Join multiple tables and derive insights <br>
+• Use SQL in Jupyter Notebook
+
+</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 11</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Big Data Tools – Hadoop and Spark Overview</h6>
+      <p>Get introduced to the big data ecosystem and tools used to process massive datasets efficiently.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Introduction to big data and Hadoop ecosystem <br>
+• HDFS, MapReduce fundamentals <br>
+• Apache Spark overview <br>
+• Spark with Python (PySpark) <br>
+• Real-time vs batch processing
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Install Spark locally <br>
+• Run basic Spark operations with PySpark <br>
+• Load and process large files using RDDs and DataFrames
+
+</p>
+      
+    </div>
+
+    <div class="info-box">
+      <h1 class="section-header">Session 12</h1>
+      <h6 class="" style="color: rgb(24, 179, 231);">Capstone Project + Resume & Interview Prep</h6>
+      <p>Put everything you've learned into practice. Build a complete data science project from scratch and get guidance on resumes, GitHub portfolios, and interviews.
+</p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Choosing the right project (finance, retail, health, etc.) <br>
+• Data cleaning, EDA, modeling, and deployment overview <br>
+• Presenting insights with dashboards (optional: Power BI/Tableau) <br>
+• Resume tips for data science roles <br>
+• Interview questions and mock interview guidance
+
+</p>
+<h4 class="" style="color: blue">Hands-on:</h4>
+<p>
+• Work on a real capstone project (end-to-end) <br>
+• Document your process in GitHub <br>
+• Participate in a mock interview with case-based questions
+
+</p>
+      
+    </div>
+
+
+  </div>
+</body>
+</html>
+
+<!-- Repeat the same pattern in section2.html to section5.html -->

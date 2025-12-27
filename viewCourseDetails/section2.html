@@ -1,0 +1,415 @@
+<!-- section2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Section 1 Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f6fa;
+      margin: 0;
+    }
+    .container-box {
+      padding: clamp(30px, 5vw, 60px);
+    }
+    .info-box {
+      /* background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      animation: fadeInUp 0.8s ease forwards;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; */
+
+       border: 3px solid transparent;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       text-decoration: none;
+       color: #333;
+       position: relative;
+       overflow: hidden;
+
+       background: #ffffff;
+      border-radius: 16px;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+      padding: clamp(20px, 5vw, 40px);
+      margin-bottom: 40px;
+      /* animation: fadeInUp 0.8s ease forwards; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    .info-box:hover {
+      /* transform: scale(1.02);
+      animation: hoverPop 0.5s forwards; */
+      animation: borderRun 1.5s infinite linear;
+      border: 3px solid red;
+      box-shadow: 0 0 15px red;
+    }
+    /* Border animation */
+@keyframes borderRun {
+  0% {
+    box-shadow: 0 0 0px red;
+  }
+  50% {
+    box-shadow: 0 0 15px red;
+  }
+  100% {
+    box-shadow: 0 0 0px red;
+  }
+}
+/* Optional icon (lightbulb) */
+.info-box::before {
+  content: "💡";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover::before {
+  transform: rotate(20deg) scale(1.2);
+}
+    .info-box h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #2c3e50;
+    }
+    .info-box p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: #555;
+      line-height: 1.7;
+    }
+    .view-details {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: clamp(14px, 2vw, 18px);
+      background: linear-gradient(135deg, #4e9af1, #68d0f4);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .view-details:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes hoverPop {
+      from {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      to {
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+      .section-header {
+  display: inline-block;
+  padding: 12px 15px 15px 8px;
+  font-size: clamp(14px, 4vw, 20px); /* responsive text */
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 132, 255, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  text-align: center;
+  top: -10px;
+  left:-15px;
+  overflow: hidden;
+  animation: slideUpFade 1s ease-in-out;
+}
+
+/* Hover animation */
+.section-header:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 132, 255, 0.5);
+}
+  </style>
+</head>
+<body>
+  <div class="container container-box">
+    <div class="info-box">
+      <h1 class="section-header">session 1</h1>
+      <h4 class="" style="color: rgb(24, 179, 231);">Version Control with Git </h4>
+      <p>In this module, you will gain insights into Source Control Management and learn the functionalities of Git. <br>
+Understand Version Control <br>
+ 1. Perform management of files for small as well as large projects <br>
+ 2. Perform various Git commands such as git add, git fetch, git commit, git init, etc. <br>
+ 3. Work with remote repositories</p>
+ <h4 class="" style="color:red;">TOPICS: </h4>
+ <p>
+ • Branching and merging in Git <br>
+ • Merge Conflicts <br>
+ • Stashing, Rebasing, Reverting and Resetting <br> 
+ • Git Workflows Introduction to Maven  <br>
+ • Maven Architecture Introduction to Continuous Integration <br> 
+ • Version Control <br>
+ • Git Introduction <br>
+ • Git Installation <br>
+ • Commonly used commands in Git <br>
+ • Working with Remote repository 
+</p>
+<h4 class="" style="color: blue">Hands On:</h4>
+<p>
+  • Git Common Commands <br>
+  • Working with Remote Repository</p>
+
+      
+    </div>
+
+
+
+    <div class="info-box">
+      <h1 class="section-header">Git, Jenkins & Maven Integration</h1>
+      <p>In this module, you will learn about the different actions performed through Git and will be introduced to Jenkins and Maven. <br>
+      • Execute branching and merging operations <br>
+      • Perform various Git commands <br>
+      • Understand Maven Architecture and dependencies <br>
+      • Learn about Continuous Integration & its importance <br>
+      • Understand Jenkins and its features
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>Branching and merging in Git <br>
+•  Merge Conflicts <br>
+• Stashing, Rebasing, Reverting and Resetting <br>
+• Git Workflows Introduction to Maven <br>
+• Maven Architecture <br>
+• Introduction to Continuous Integration <br>
+• Introduction to Jenkins
+      </p>
+      <h4 class="" style="color: blue">Hands On</h4>
+      <p>
+       • Branching and Merging <br>
+       • Merge Conflicts <br>
+       • Stashing, Rebasing, Reverting, and  <br>
+       • Configuring Maven</p>
+      
+      
+    </div>
+    <div class="info-box">
+      <h1 class="section-header">continuous Integration using Jenkins</h1>
+      <p>In this module, learn how to perform Continuous Integration by building applications with the help of Maven and create deployment pipelines using Jenkins. <br>
+       • Managing authorization in Jenkins <br>
+       • Jenkins notification management <br>
+       • Master-slave architecture in Jenkins Add a slave node to Jenkins master <br> 
+       • Build and deploy codes using Jenkins <br>
+       • Build pipeline plugin in Jenkins <br>
+       • Use Declarative pipeline in Jenkins
+      </p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      • Jenkins Architecture <br>
+      • Plugin Management in Jenkins <br>
+      • Jenkins Security Management <br>
+      • Notification in Jenkins <br>
+      • Jenkins Master-slave architecture <br>
+      • Jenkins Delivery Pipeline <br>
+      • Jenkins Declarative pipeline <br> <br>
+      <h4 class="" style="color: blue">Hands on:</h4>
+      <p>  
+    • Create pipeline view using Decompile and QA UnitTest <br>
+    • Adding Slave node in Jenkins <br>
+    • Build Pipeline project using Groovy script</p>
+    </div>
+
+     <div class="info-box">
+      <h1 class="section-header">Configuration Management Using Ansible</h1>
+      <p>Learn how to manage and configure your infrastructure using Ansible Ad-Hoc commands, Playbooks, and Roles <br>
+        • Utilize Ansible CLI <br>
+        • Execute Ansible Ad-Hoc Commands for one-off tasks <br>
+        • Automate host servers using Ansible Playbooks <br>
+        • Use Variables in Playbooks <br>
+        • Using Handlers
+      </p>
+<h4 class="" style="color:red;">Topics:</h4>
+<p>
+• Introduction to Configuration Management <br>
+• Infrastucture as Code <br>
+• Introduction to Ansible <br>
+• Ansible Architecture <br>
+• Inventory Management <br>
+• Ansible Modules <br>
+• AD-HOC Commands <br>
+• Ansible Playbooks <br>
+• Ansible Roles</p>
+<h4 class="" style="color: blue">Hands On:</h4>
+<p>
+• Ad-Hoc Commands <br>
+• Running a Simple Playbook <br> 
+• Using Variables and handlers <br>
+• Using Ansible Roles  </p>
+      
+    </div>
+
+
+     <div class="info-box">
+      <h1 class="section-header">containerization using Docker Part – I</h1> 
+      <p> This module introduces learners to the core concepts and technology behind Docker. Learn in detail about containers and various operations performed on them. <br>
+• Understand Containerization <br>
+• Learn the evolution of virtualization to containers <br> 
+• Understand the Docker Architecture <br>
+• Perform Various actions using Docker CLI <br>
+• Bind container ports to the Machine ports <br>
+• Run containers in different modes <br>
+• Write and build a Dockerfile to create a Docker Image
+      </p> 
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Containerization <br>
+• Namespaces <br>
+• Docker <br>
+• Docker Architecture <br>
+• Container Lifecycle <br>
+• Docker CLI <br>
+• Port Binding <br>
+• Detached and Foreground Mode <br>
+• Dockerfile <br>
+• Dockerfile Instructions <br>
+• Docker image</p>
+<h4 class="" style="color: blue">Hands On:</h4>
+<p>
+• Setting up Docker Hub <br> 
+• Docker Volumes <br>
+• Installing Docker <br>
+• Compose Installing a Multi-Container Application using Compose <br>
+• Running Docker in Swarm Mode
+</p>
+    </div>
+
+     <div class="info-box">
+      <h1 class="section-header">Orchestration using Kubernetes Part – I</h1>
+      <p>In this module, you will learn about Container Orchestration and Basic of container management using Kubernetes <br>
+• Understand Container Orchestration <br>
+• Learn about Kubernetes Core Concept <br>
+• Deploy Pods <br>
+• Create Deployments to manage Pods <br>
+• Launch Daemon Sets for Background applications <br>
+• Update and Rollback your Deployments <br>
+• Scale your containerized Applications
+      </p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Introduction to Container <br>
+• Orchestration Kubernetes Core Concepts <br> 
+• Understanding Pods <br>
+• ReplicaSet and Replication Controller <br> 
+• Deployments <br>
+• DaemonSets <br>
+• Rolling Updates and Rollbacks <br> 
+• Scaling Application</p>
+<h4 class="" style="color: blue">Hands On:</h4>
+<p>
+• Deploying Services <br>
+• Persistent Volumes and persistent volumes Claims <br>
+• StatefulSets <br>
+• ConfigMaps and Secret <br>
+• Helm charts
+</p>
+      
+    </div>
+
+
+     <div class="info-box">
+      <h1 class="section-header">monitoring using Prometheus and Grafana</h1>
+      <p>In this module, you will learn how to collect, monitor, and visualize data using Prometheus and Grafana. <br>
+• Understand Continuous Monitoring <br>
+• Use Prometheus to monitor services <br>
+• Create an alerting mechanism using Prometheus <br> 
+• Deploy Grafana dashboards to visualize data <br>
+• Integrate Prometheus and Grafana to monitor a full pipeline 
+      </p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Introduction to Prometheus and Grafana <br>
+• Prometheus and Grafana Setup <br>
+• Monitoring using Prometheus <br>
+• Dashboard Visualization using Grafana <br> 
+• Creating a Dashboard to monitor the Pipeline
+      </p>
+      <h4 class="" style="color: blue">Hands On: </h4>
+      <p>
+• Monitoring Service using Prometheus <br>
+• Alerting using Prometheus <br>
+• Grafana Dashboards <br>
+• Monitoring a Pipeline
+      </p>
+      
+    </div>
+
+     <div class="info-box">
+      <h1 class="section-header">provisioning using Terraform Part - II </h1>
+      <p>Use Terraform State commands to manage the current state of your infrastructure. Deploy a fully usable and working infrastructure using Terraform <br>
+• Perform Terraform State Commands  <br>
+• Deploy a Terraform Project on AWS
+      </p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Terraform State <br>
+• Terraform Project
+      </p>
+      <h4 class="" style="color: blue">Hands On:</h4>
+      <p>
+• Terraform State Commands <br>
+• Terraform Project
+      </p>
+      
+    </div>
+
+<div class="info-box">
+      <h1 class="section-header">Selenium (Self-Paced)</h1>
+      <p>In this module, you will learn about selenium and how to automate your test cases for testing web elements. You will also get introduced to X-Path, TestNG and integrate Selenium with Jenkins <br>
+• Learn and install Selenium <br>
+• Create Test Cases in Selenium WebDriver <br>
+• Utilize X-Path and TestNG to locate elements <br>
+• Execute code on several browsers using Selenium suite of tools <br>
+• Integrate Selenium with Jenkins      
+      </p>
+      <h4 class="" style="color:red;">Topics:</h4>
+      <p>
+• Introduction to Selenium <br>
+• Why Selenium? <br>
+• Selenium – Webdriver <br> 
+• Creating Test Cases in Selenium WebDriver (Waits) <br>
+• What and why X-Path <br>
+• Handling different controls on Webpage <br>
+• Framework in Selenium <br>
+• Selenium Integration with Jenkins <br>
+• Implementation of Selenium in the Edureka’s Project
+      </p>
+      <h4 class="" style="color: blue">Hands On:</h4>
+      <p>
+• Installing Nagios <br>
+• Monitoring of different servers using Nagios
+      </p>
+      
+    </div>
+
+    <!-- <div class="info-box">
+      <h1>Section 1 – Getting Started</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis praesentium enim.</p>
+      
+    </div> -->
+
+  </div>
+</body>
+</html>

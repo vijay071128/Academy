@@ -1,0 +1,14 @@
+// {
+//   "name": "company-project-demo-3",
+//   "version": "1.0.0",
+//   "description": "Static website for Cloud Synapse Technologies",
+//   "main": "index.html",
+//   "scripts": {
+//     "dev": "live-server --port=3000 --open=index.html"
+//   },
+//   "devDependencies": {
+//     "live-server": "^1.2.2"
+//   },
+//   "author": "",
+//   "license": "ISC"
+// }
